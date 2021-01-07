@@ -107,7 +107,8 @@ body {
 
 .secondary-title {
   text-align: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 2.4rem; }
 
 .section-title {
   text-align: center;
@@ -118,6 +119,8 @@ body {
 
 #nav-bar {
   padding: 1.4rem 0; }
+  #nav-bar a {
+    color: #2d314d; }
   #nav-bar .nav-content {
     display: flex;
     flex-direction: row;
@@ -317,36 +320,109 @@ footer {
       align-items: center;
       gap: 1rem; }
 
-#hero-about .container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  text-align: center;
+#hero-about {
   padding-bottom: 3rem; }
-  #hero-about .container div {
-    margin-bottom: 1.6rem; }
-  #hero-about .container p {
-    line-height: 1.3; }
-
-#image-about {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; }
+  #hero-about h1 {
+    margin: 0 auto;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem; }
+  #hero-about .our {
+    margin-bottom: 1rem; }
+    #hero-about .our p {
+      line-height: 1.2;
+      font-size: 1.3rem;
+      width: 90%; }
+    #hero-about .our h3 {
+      font-size: 1.6rem; }
 
 #about-features .boxes {
   display: grid;
-  grid-template-columns: repeat(1fr);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem 0;
-  border-top: solid #1c262f 1px;
-  border-bottom: solid #1c262f 1px; }
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  text-align: center; }
   #about-features .boxes .box h3 {
     font-size: 1.6rem; }
-  #about-features .boxes .box .number {
-    color: #ba4272;
-    font-weight: 400;
-    font-size: 5rem; }
+  #about-features .boxes .box p {
+    font-size: 4.5rem;
+    color: #ff8c9f; }
+
+#hero-pricing h1 {
+  margin: 0 auto;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 2rem; }
+
+#hero-pricing .pricing-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  #hero-pricing .pricing-boxes > * {
+    flex-basis: 270px;
+    padding-bottom: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: #1c262f 1px solid; }
+    #hero-pricing .pricing-boxes > * h2 {
+      text-align: center;
+      color: #d6457f; }
+    #hero-pricing .pricing-boxes > * p {
+      text-align: center;
+      padding-bottom: 1rem;
+      font-size: 1.4rem; }
+    #hero-pricing .pricing-boxes > * .price {
+      font-size: 4rem;
+      color: #1c262f;
+      text-align: center;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: #1c262f 1px solid; }
+    #hero-pricing .pricing-boxes > * .features ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: fit-content;
+      margin: 0 auto;
+      padding-bottom: 1.2rem; }
+      #hero-pricing .pricing-boxes > * .features ul li .transparent {
+        color: transparent; }
+    #hero-pricing .pricing-boxes > * a {
+      display: block;
+      padding: 0.8rem 2rem;
+      margin: 0 auto;
+      width: fit-content;
+      border-radius: 20px;
+      border: 1px solid #1c262f;
+      text-align: center;
+      font-weight: bold;
+      color: #43596b; }
+
+#hero-contact .form input,
+#hero-contact .form textarea {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0.6rem;
+  margin-bottom: 2rem;
+  background-color: #eef3f9;
+  border: none;
+  border-bottom: 1px solid #43596b;
+  font-size: 1.2rem; }
+
+#hero-contact .form textarea {
+  padding-bottom: 3rem; }
+
+#hero-contact .form .submit {
+  padding: 1.2rem 2.6rem;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-bottom: none;
+  width: fit-content;
+  border: 1px solid #43596b; }
 
 @media screen and (min-width: 780px) {
   #nav-bar .nav-content {
@@ -364,7 +440,8 @@ footer {
     #nav-bar .nav-content .menu-btn {
       display: none; }
     #nav-bar .nav-content .deskop {
-      display: inline; }
+      display: inline;
+      color: white; }
   #hero .hero-content {
     display: flex;
     flex-direction: row; }
@@ -403,4 +480,20 @@ footer {
       display: flex;
       flex-direction: row; }
       footer .container ul li {
-        margin-right: 2rem; } }
+        margin-right: 2rem; }
+  #hero-about {
+    padding-bottom: 3rem; }
+    #hero-about h1 {
+      text-align: left;
+      margin-left: 0;
+      width: 60%;
+      margin-bottom: 2rem; }
+    #hero-about .our {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      margin-bottom: 1rem; }
+      #hero-about .our h3 {
+        text-align: left;
+        font-size: 1.4rem; }
+      #hero-about .our p {
+        line-height: 1.4; } }
